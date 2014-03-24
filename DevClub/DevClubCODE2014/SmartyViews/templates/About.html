@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>MTL Parking Finder</title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <link rel="stylesheet" href="/DevClub/DevClubCODE2014/Content/bootstrap.css" type="text/css"/>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="Home.html"><img src="/DevClub/DevClubCODE2014/Content/Images/MParkingLogo.png"></img></a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                     <li id="weather"><iframe marginheight="0" marginwidth="0" name="wxButtonFrame" id="wxButtonFrame" height="90" src="http://btn.weather.ca/weatherbuttons/template5.php?placeCode=CAQC0363&category0=Cities&containerWidth=150&btnNo=&backgroundColor=blue&multipleCity=0&citySearch=0&celsiusF=C" align="top" frameborder="0" width="150" scrolling="no" allowTransparency="true"></iframe></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="intro" class="container">
+            <h2>About Montreal Parking Finder:</h2>
+            <br/>
+            <br/>
+            <p align="justify">Montreal Parking Finder has been coded by 4 graduating computer science students from John Abbott College.
+                <br><br/>
+                Our goal was to use the parking information found on the
+                <a href="http://donnees.ville.montreal.qc.ca/dataset/stationnement-rue"> City of Montreal website</a>  to allow users to find free parking
+                near their current location or their future destination. Our website uses the google maps API and provides coordinates
+                taken from a kmz file. Our current implementation only includes parking spots from Plateau-Mont-Royal, but can and
+                will use more data in the future.
+                <br/><br/>
+                It was designed and implemented within 48 hours as part of the 
+                <a href="https://www.canadianopendataexperience.com/">Canadian Open Data Experience</a> project.
+            </p>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="/DevClub/DevClubCODE2014/Content/JavaScript/GoogleMaps.js"></script>
+    
+    </body>
+</html>
